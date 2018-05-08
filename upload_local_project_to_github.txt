@@ -23,6 +23,7 @@ git add .
 git commit -m "first commit"
 git push -u origin master         // push local repository to github 
 
+// need to enter the username and password of github
 
 -----------------------
 Second method:
@@ -34,7 +35,6 @@ git commit -m "first commit"
 // generate ssh-keygen, will get id_rsa and id_rsa.pub under .ssh dir; 
 // and put the id_rsa.pub to github Settings/SSH and GPG keys
 ssh-keygen -t rsa -C "key"
-
 
 git remote add origin https://github.com/lovelytree/Test.git
 git push -u origin master
