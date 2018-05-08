@@ -1,0 +1,44 @@
+two method to upload local project to github
+
+First method: 
+1) make repository on github first 
+2) clone/download this repository to local
+3) upload local change to github
+
+commands:
+
+click "clone or download" in the repository to get to URL
+
+  Clone with HTTPS:   
+  https://github.com/lovelytree/appium.git
+
+  Clone with SSH:
+  git@github.com:lovelytree/appium.git
+
+mkdir Test
+cd Test
+git clone https://github.com/lovelytree/appium.git
+
+git add .
+git commit -m "first commit"
+git push -u origin master         // push local repository to github 
+
+
+-----------------------
+Second method:
+
+git init
+git add .
+git commit -m "first commit"
+
+// generate ssh-keygen, will get id_rsa and id_rsa.pub under .ssh dir; 
+// and put the id_rsa.pub to github Settings/SSH and GPG keys
+ssh-keygen -t rsa -C "key"
+
+
+git remote add origin https://github.com/lovelytree/Test.git
+git push -u origin master
+
+
+
+
